@@ -134,6 +134,7 @@ echo "Title: $PR_TITLE"
 # Construct the gh command
 GH_COMMAND="gh pr create --base \"$BASE_BRANCH\" --head \"$CURRENT_BRANCH\" --title \"$PR_TITLE\" --body \"$PR_DESCRIPTION\" $REVIEWER_FLAG $LABEL_FLAG $DRAFT_FLAG"
 
+
 # Execute the command
 if eval "$GH_COMMAND"; then
   echo ""
